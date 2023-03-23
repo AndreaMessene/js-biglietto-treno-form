@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+
+    <div class="container biglietto d-flex flex-column align-items-center mt-5 rounded-4" id="biglietto">
+
+        <!-- CALCOLA IL PREZZO -->
+        <h2 class="text-center pt-3 pb-3">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+        
+        <div class="calcola-prezzo rounded-4">
+            <div class="d-flex justify-content-around pt-4">                
+                <div>
+                    <label for="nome" class="form-label">Nome Cognome</label>
+                    <input type="text" class="form-control" id="nomeCognome" aria-describedby="nome cognome">
+                </div>
+                <div>
+                    <label for="km" class="form-label">Km da percorrere</label>
+                    <input type="text" class="form-control" id="km" aria-describedby="nome cognome">
+                </div>
+                <div>
+                    <label for="eta" class="form-label">Fascia d'età</label>
+                    <input type="text" class="form-control" id="eta" aria-describedby="nome cognome">
+                </div>                  
+            </div>
+            <div class="text-center pt-5">
+                <button type="button" onclick="calcola()">Genera</button>
+                <button type="button"> annulla </button>
+            </div>
+        </div>
+
+
+        <!-- IL TUO BOGLIETTO -->
+        <h2 class="text-center pt-3 pb-3">IL TUO BIGLIETTO</h2>
+        <div class="biglietto-personale rounded-4 ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 identita rounded-start-4">
+                        <h3> NOME PASSEGGERO </h3>
+                        <div id="nominativo" ></div>
+
+                    </div>
+
+                    <div class="col-2">
+                        <h5> offerta</h5>
+                        <div id="sconto" ></div>
+                    </div>
+
+                    <div class="col-2">
+                        <h5>Carrozza</h5>
+                        <div id="carrozza"></div>
+                    </div>
+
+                    <div class="col-2">
+                        <h5>Codice CP</h5>
+                        <div id="codice" >92911</div>
+                    </div>
+
+                    <div class="col-2">
+                        <h5>Costo Biglietto</h5>
+                        <div id="costo" ></div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <script src="./assets/main.js"></script>
+
+</body>
+</html>
